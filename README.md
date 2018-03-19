@@ -5,6 +5,20 @@ Music album catalog using node.js, angular and mysql.
 ## Setup
 
 On infra folder you will find `mysql-container.cmd` file, just run it with docker and the mysql database will be setted.
+
+To setup the database data run
+```
+mysql -uroot -p
+
+password
+
+source ./music.sql;
+
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'password';
+
+exit;
+```
+
 Run `npm install` to get all dependencies downloaded.
 
 ## Build
